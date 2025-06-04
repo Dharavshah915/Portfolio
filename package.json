@@ -1,7 +1,8 @@
 {
-  "name": "@nkzw/vite-ts-react-tailwind",
+  "name": "dharav's_Portfolio",
   "version": "0.0.1",
-  "author": "Christoph Nakazawa <christoph.pojer@gmail.com>",
+  "author": "Dharav Shah",
+  "homepage": "https://dharavshahcodes.co/",
   "repository": {
     "type": "git",
     "url": "git://github.com/cpojer/vite-ts-react-tailwind.git"
@@ -52,6 +53,8 @@
     "vitest": "^0.34.6"
   },
   "scripts": {
+    "deploy": "main -d dist",
+    "preview": "vite preview",
     "build": "vite build",
     "dev": "vite dev",
     "format": "prettier --write .",
