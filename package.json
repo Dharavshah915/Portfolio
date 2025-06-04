@@ -53,9 +53,10 @@
     "vitest": "^0.34.6"
   },
   "scripts": {
-    "deploy": "main -d dist",
-    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "git add docs && git commit -m 'Deploy to GitHub Pages' && git push origin main",
     "build": "vite build",
+    "preview": "vite preview",
     "dev": "vite dev",
     "format": "prettier --write .",
     "lint:format": "prettier --cache --check .",
