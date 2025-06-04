@@ -4,6 +4,9 @@ import { defineConfig } from "vite"
 
 export default defineConfig({
   base: 'https://dharavshahcodes.co/',
+  build: {
+    outDir: 'docs'  // Change from default 'dist' to 'docs'
+  },
   plugins: [react()],
   resolve: {
     alias: {
