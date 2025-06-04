@@ -35,7 +35,7 @@ const HomePage = () => {
 
       <div className="text-md mt-8 max-w-[535px] space-y-4 font-light tracking-wider text-gray-300 md:space-y-6">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          dharav Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor dgsdgsdgsdgsdgsdincididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
         </p>
