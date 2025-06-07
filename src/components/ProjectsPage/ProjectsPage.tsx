@@ -8,6 +8,7 @@ interface Project {
   description: string;
   imageUrl: string;
   imageAlt: string;
+  projectUrl: string;
 }
 
 const projects: Project[] = [
@@ -17,7 +18,8 @@ const projects: Project[] = [
       'A modern portfolio built using React and TypeScript, showcasing proficiency with modern web technologies.',
     imageUrl:
       'https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    imageAlt: 'AI Portfolio Project',
+    imageAlt: 'Portfolio Project',
+    projectUrl: 'https://github.com/Dharavshah915/Portfolio',
   },
   {
     title: 'Cybersecurity System',
@@ -25,14 +27,17 @@ const projects: Project[] = [
       'Developed a robust security system containing a password manager, facial recognition, and file encryption utalizing OpenCV, Flask, SQL.',
     imageUrl:
       'https://plus.unsplash.com/premium_photo-1700830193661-f6822dca5eee?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    imageAlt: 'E-Commerce Platform',
+    imageAlt: 'Security System',
+    projectUrl:
+      'https://github.com/Dharavshah915/Cyber_Security_and_Encryption_System',
   },
   {
     title: 'RecycloBot',
     description:
       'An Ai waste management system designed for automated seperation of diffrent types of waste accompanied by an app.',
     imageUrl: RecycloBot,
-    imageAlt: 'Task Management App',
+    imageAlt: 'Waste Managment Ai bin ',
+    projectUrl: 'https://github.com/Dharavshah915/RecycloBot',
   },
   {
     title: 'Employee Authenticator',
@@ -40,7 +45,8 @@ const projects: Project[] = [
       'Developed a facial recognition-based employee authentication system using AWS Rekognition to verify user identities.',
     imageUrl:
       'https://plus.unsplash.com/premium_photo-1674506652857-6c816df228c4?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    imageAlt: 'AI Chat Assistant',
+    imageAlt: 'Authenticator',
+    projectUrl: 'https://github.com/Dharavshah915/Employee_Authenticator',
   },
 ];
 
@@ -97,6 +103,7 @@ const ProjectsPage = () => {
                 description={project.description}
                 imageUrl={project.imageUrl}
                 imageAlt={project.imageAlt}
+                projectUrl={project.projectUrl}
               />
             </motion.div>
           ))}

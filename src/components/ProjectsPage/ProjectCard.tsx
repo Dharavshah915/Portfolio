@@ -25,7 +25,7 @@ export function ProjectCard({
   description,
   imageUrl,
   imageAlt,
-  projectUrl = '#',
+  projectUrl,
 }: ProjectCardProps) {
   return (
     <Card className="bg-gray-5000 h-[400px] max-w-[24rem] overflow-hidden border border-gray-500 shadow-md shadow-glow transition-all duration-300 text-shadow-glow hover:border-gray-600">

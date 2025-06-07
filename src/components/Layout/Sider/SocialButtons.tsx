@@ -12,11 +12,6 @@ const SocialButtons = () => {
       title: 'LinkedIn',
       link: 'https://www.linkedin.com/in/dharav-shah-035758297/',
     },
-    {
-      icon: <FaMedium />,
-      title: 'Medium',
-      link: 'https://medium.com/@kabirplanes',
-    },
   ];
 
   return (
