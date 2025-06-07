@@ -35,18 +35,14 @@ const HomePage = () => {
 
       <div className="text-md mt-8 max-w-[535px] space-y-4 font-light tracking-wider text-gray-300 md:space-y-6">
         <p>
-          dharav Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor dgsdgsdgsdgsdgsdincididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          Hi, I’m a Software Engineer at McMaster University with experience in
+          full-stack app development, machine learning, and AI integration. I
+          love building intuitive, impactful software—whether it's a web app,
+          mobile tool, or an AI-powered solution. My projects often blend clean
+          design with smart functionality, and I’m always exploring new ways to
+          push technology further. Take a look around to see what I’ve been
+          working on.
         </p>
-
-        <p>
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla
-        </p>
-
-        <p>pariatur. Excepteur sint occaecat cupidatat non proident</p>
       </div>
 
       <div className="mt-2 flex items-center gap-3">

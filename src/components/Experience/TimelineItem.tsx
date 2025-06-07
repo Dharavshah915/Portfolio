@@ -9,6 +9,9 @@ interface TimelineItemProps {
   year: string;
   isExpanded: boolean;
   onExpand: () => void;
+  responsibilities: string[];
+  technologies: string[];
+  achievements: string[];
 }
 
 export default function TimelineItem({
@@ -18,6 +21,9 @@ export default function TimelineItem({
   year,
   isExpanded,
   onExpand,
+  responsibilities,
+  technologies,
+  achievements,
 }: TimelineItemProps) {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -48,7 +54,7 @@ export default function TimelineItem({
   };
 
   return (
-    <div className="relative flex flex-col items-center">
+    <div className="relative flex flex-col items-start">
       <div className="pointer-events-none absolute -left-8 top-8 z-10 h-[100px] w-6">
         <div
           className="absolute left-2.5 top-0 h-full w-[1px]"
@@ -125,7 +131,7 @@ export default function TimelineItem({
                   staggerDirection: -1,
                 },
               }}
-              className="mt-6 w-full max-w-2xl overflow-hidden"
+              className="mt-6 w-full overflow-hidden"
             >
               <motion.div
                 className="bg-gray-1000 rounded-2xl border-l-2 border-purple-800 p-6 shadow-lg"
@@ -173,11 +179,9 @@ export default function TimelineItem({
                       Key Responsibilities
                     </h5>
                     <ul className="list-inside list-disc space-y-2 text-gray-300">
-                      <li>
-                        Developed and maintained responsive web applications
-                      </li>
-                      <li>Collaborated with cross-functional teams</li>
-                      <li>Implemented new features and optimizations</li>
+                      {responsibilities.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                   </motion.div>
 
@@ -205,16 +209,14 @@ export default function TimelineItem({
                       Technologies Used
                     </h5>
                     <div className="flex flex-wrap gap-2">
-                      {['React', 'TypeScript', 'Tailwind CSS', 'Node.js'].map(
-                        (tech) => (
-                          <span
-                            key={tech}
-                            className="rounded-full bg-indigo-500/20 px-3 py-1 text-sm text-indigo-300"
-                          >
-                            {tech}
-                          </span>
-                        ),
-                      )}
+                      {technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-full bg-indigo-500/20 px-3 py-1 text-sm text-indigo-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
                     </div>
                   </motion.div>
 
@@ -242,12 +244,9 @@ export default function TimelineItem({
                       Achievements
                     </h5>
                     <ul className="list-inside list-disc space-y-2 text-gray-300">
-                      <li>Reduced page load time by 40%</li>
-                      <li>
-                        Implemented new features that increased user engagement
-                        by 25%
-                      </li>
-                      <li>Received recognition for outstanding performance</li>
+                      {achievements.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                   </motion.div>
                 </div>
