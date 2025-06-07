@@ -1,4 +1,4 @@
-import portfolioLogo from '@/assets/images/portfolio_logo_kabir.png';
+import portfolioLogo from '@/assets/images/portfolio_logo_DharavShah.png';
 import { Helmet } from 'react-helmet';
 
 const SeoPart = () => {
