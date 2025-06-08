@@ -37,7 +37,7 @@ const Footer = () => {
         </span>
       </div>
       <a
-        href="/src/assets/Dharav Shah resume.pdf"
+        href="/public/Dharav Shah resume.pdf"
         download="Dharav's Resume.pdf"
         className="flex items-center gap-1.5 text-gray-300 transition-colors hover:text-white"
       >
