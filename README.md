@@ -9,7 +9,7 @@ Welcome to my personal portfolio built with **React** and **TypeScript**. This p
 - ⚛️ **React**
 - 🧠 **TypeScript**
 - 🎨 **Tailwind CSS**
-- 🌟 **Framer Motion** (
+- 🌟 **Framer Motion** 
 - 📸 **Unsplash API** 
 - 📦 **Vite**
 
