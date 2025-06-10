@@ -2,8 +2,6 @@
 
 Welcome to my personal portfolio built with **React** and **TypeScript**. This project showcases my background, skills, and projects in a modern, responsive, and visually appealing format.
 
-## 🌐 Live Demo
-
 👉 [View Portfolio Live](https://dharavshahcodes.co)
 
 ## 🛠️ Technologies Used
